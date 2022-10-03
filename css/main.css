@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background-color: rgb(50, 50, 50);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: lightblue;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: lightblue;
+}
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 246, 234);
+    height: 600px;
+    width: 1200px;
+}
+
+.item{
+    transition: all 0.25s;
+    position: fixed;
+    height: 50px;
+    width: 30px;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+}
