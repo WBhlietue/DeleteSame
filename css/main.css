@@ -1,38 +1,143 @@
-body{
-    margin: 0;
-    background-color: rgb(50, 50, 50);
+@font-face {
+  font-family: Lobster;
+  src: url("../Fonts/Lobster-Regular.ttf");
 }
-
-.header{
-    position: fixed;
-    top: 0;
-    height: 50px;
-    width: 100%;
-    background-color: lightblue;
-}
-.footer{
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    width: 100%;
-    background-color: lightblue;
-}
-.main{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 246, 234);
-    height: 600px;
-    width: 1200px;
-}
-
-.item{
-    transition: all 0.25s;
-    position: fixed;
+@keyframes startScale {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+  to {
     height: 50px;
     width: 30px;
-    left: 0px;
-    top: 0px;
-    background-color: black;
+  }
+}
+
+button{
+    font-family: Lobster;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(50, 50, 50);
+  font-family: Lobster;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: lightblue;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: lightblue;
+}
+.main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 246, 234);
+  height: 600px;
+  width: 1200px;
+}
+
+.item {
+  transition: all 0.25s;
+  position: fixed;
+  height: 50px;
+  width: 30px;
+  left: 0px;
+  top: 0px;
+  animation-name: startScale;
+  animation-duration: 1s;
+  background-color: black;
+}
+
+.btn {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30px;
+}
+.inputNum {
+  height: 50;
+  width: 140px;
+}
+
+.start {
+padding:  10px;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  transition: all 0.5s;
+}
+
+.reStart {
+  position: relative;
+  top: 50%;
+  left: 100px;
+  transform: translate(0, -50%);
+  height: 30px;
+  width: 100px;
+  font-size: 20px;
+}
+
+.win {
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  /* transform: scale(0, 0); */
+  transition: all 0.5s;
+}
+.winText {
+  /* border: 2px solid black; */
+  width: 100%;
+  font-size: 30px;
+  font-family: Lobster;
+  height: 50px;
+}
+.winBTN{
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: Lobster;
+    font-size: 30px;
+}
+.timer{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 10px;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+.winTime{
+    position: absolute;
+    font-size: 30px;
+    top: 30%;
+    width: 400px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
 }
