@@ -38,6 +38,7 @@ body {
   background-color: lightblue;
 }
 .main {
+  border-radius: 20px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -48,6 +49,7 @@ body {
 }
 
 .item {
+  border-radius:20px;
   transition: all 0.25s;
   position: fixed;
   height: 50px;
@@ -60,6 +62,7 @@ body {
 }
 
 .btn {
+  border-radius: 10px;
   height: 50px;
   width: 200px;
   position: relative;
@@ -70,9 +73,11 @@ body {
 .inputNum {
   height: 50;
   width: 140px;
+  border-radius: 10px;
 }
 
 .start {
+  border-radius: 10px;
 padding:  10px;
   position: relative;
   height: 300px;
@@ -85,6 +90,7 @@ padding:  10px;
 }
 
 .reStart {
+  border-radius: 10px;
   position: relative;
   top: 50%;
   left: 100px;
@@ -95,6 +101,7 @@ padding:  10px;
 }
 
 .win {
+  border-radius: 10px;
   text-align: center;
   height: 400px;
   width: 400px;
@@ -122,6 +129,7 @@ padding:  10px;
     transform: translate(-50%, 0);
     font-family: Lobster;
     font-size: 30px;
+    border-radius: 10px;
 }
 .timer{
     position: absolute;
